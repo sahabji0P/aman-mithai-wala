@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
 
-        <div className="navbar bg-base-100 z-20 fixed">
+        <div className="navbar bg-base-100 z-50 fixed">
           <div className="navbar-start">
 
             <Link href="/">

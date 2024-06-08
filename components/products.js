@@ -1,80 +1,95 @@
-import { useState } from 'react';
-import Card from './card';
+'use client'
+
+import { useState } from 'react'
+import Image from 'next/image'
+import weddingBhaji from '@/public/weddingBhaji.jpg'
 
 export default function Products() {
-    const [activeTab, setActiveTab] = useState(0);
+    const [showPopup, setShowPopup] = useState(false)
 
-    const handleTabClick = (index) => {
-        setActiveTab(index);
-    };
+    const togglePopup = () => {
+        setShowPopup(!showPopup)
+    }
 
     return (
+        <div className='p-12 flex flex-col w-full mt-36 bg-gray-500 border-t-2 border-black dark:border-neutral-800 py-12'>
+            <section id="products">
+                <h1 className='text-4xl font-bold mb-5 text-center'>Products</h1>
+            </section>
 
-        <main className='p-16'>
-            <h1 className='text-4xl font-bold text-center'>Products</h1>
-            <div role="tablist" className="tabs tabs-lifted">
-                <input
-                    type="radio"
-                    name="my_tabs_2"
-                    role="tab"
-                    className="tab"
-                    aria-label="Tab 1"
-                    checked={activeTab === 0}
-                    onClick={() => handleTabClick(0)}
-                />
-                <div
-                    role="tabpanel"
-                    className={`tab-content bg-base-100 border-base-300 rounded-box p-6 ${activeTab === 0 ? 'block' : 'hidden'
-                        }`}
-                >
-                    {/* <div className="card w-96 bg-base-100 shadow-xl image-full ">
+            <div className='flex mt-5 space-x-4'>
+                <div className="relative z-10">
+                    {/* Card 1 */}
+
+                    <div className="card w-96 bg-base-100 shadow-xl image-full overflow-hidden transition-transform duration-300 hover:scale-105">
                         <figure><img src="https://as1.ftcdn.net/v2/jpg/02/46/31/00/1000_F_246310098_v6gBGMpR1upxO03g7awJlB0ayYhfkL5V.jpg" alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Ladoo!</h2>
                             <p>If a man chews ladoos, whose ladoos does he choose?</p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Details</button>
+                                <button className="btn btn-primary" onClick={togglePopup}>Details</button>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
 
-                    <Card />
+                    {showPopup && (
+                        <>
+                            <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-sm z-30"></div>
+                            <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg z-40 animate-zoom">
+                                <h2 className="text-xl font-boldw mb-4">Special Ladoos</h2>
+                                <p className="text-gray-600 mb-6">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <button
+                                    className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+                                    onClick={togglePopup}
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </>
+                    )}
                 </div>
 
-                <input
-                    type="radio"
-                    name="my_tabs_2"
-                    role="tab"
-                    className="tab"
-                    aria-label="Tab 2"
-                    checked={activeTab === 1}
-                    onClick={() => handleTabClick(1)}
-                />
-                <div
-                    role="tabpanel"
-                    className={`tab-content bg-base-100 border-base-300 rounded-box p-6 ${activeTab === 1 ? 'block' : 'hidden'
-                        }`}
-                >
-                    Tab content 2
-                </div>
+                <div className="relative z-10">
+                    {/* Card 2 */}
 
-                <input
-                    type="radio"
-                    name="my_tabs_2"
-                    role="tab"
-                    className="tab"
-                    aria-label="Tab 3"
-                    checked={activeTab === 2}
-                    onClick={() => handleTabClick(2)}
-                />
-                <div
-                    role="tabpanel"
-                    className={`tab-content bg-base-100 border-base-300 rounded-box p-6 ${activeTab === 2 ? 'block' : 'hidden'
-                        }`}
-                >
-                    Tab content 3
+                    <div className="card w-96 bg-base-100 shadow-xl image-full overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <figure><Image src={weddingBhaji} alt="Shoes" /></figure>
+                        <div className="card-body">
+                            <h2 className="card-title">Wedding Bhaji!</h2>
+                            <p>If a man chews ladoos, whose ladoos does he choose?</p>
+                            <div className="card-actions justify-end">
+                                <button className="btn btn-primary" onClick={togglePopup}>Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    {showPopup && (
+                        <>
+                            <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-sm z-30"></div>
+                            <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg z-40 animate-zoom">
+                                <h2 className="text-xl font-bold mb-4">What makes us different</h2>
+                                <p className="text-gray-600 mb-6">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <button
+                                    className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+                                    onClick={togglePopup}
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </>
+                    )}
                 </div>
             </div>
-        </main>
-    );
+        </div >
+    )
 }

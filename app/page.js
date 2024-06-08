@@ -6,7 +6,8 @@ import Image from "next/image";
 import doodle from "@/public/doodle.jpeg";
 import reach from "@/public/reach.jpeg";
 import Products from "@/components/products";
-import Card from "@/components/card";
+import Vision from "@/components/vision";
+import Test from "@/components/test";
 
 
 export default function Home() {
@@ -82,7 +83,8 @@ export default function Home() {
         <Difference />
       </section>
 
-      <Card />
+      <Products />
+      {/* <Test /> */}
 
       <section id="about-us"><TimeLine /></section>
 
@@ -93,7 +95,6 @@ export default function Home() {
           className="w-full"
         />
       </section>
-
 
 
 

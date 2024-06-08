@@ -7,6 +7,11 @@
     animation: zoom 0.3s ease-out;
   }
 
+  .bgimage {
+    background: url("/public/doodle.jpeg");
+    background-size: cover;
+  }
+
   @keyframes zoom {
     from {
       transform: scale(0);
