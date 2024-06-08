@@ -82,11 +82,9 @@ export default function Home() {
         <Difference />
       </section>
 
-
-
-
-
       <Card />
+
+      <section id="about-us"><TimeLine /></section>
 
       <section id="reach">
         <Image
@@ -95,9 +93,6 @@ export default function Home() {
           className="w-full"
         />
       </section>
-
-      <section id="about-us"><TimeLine /></section>
-
 
 
 
