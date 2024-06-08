@@ -13,7 +13,7 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Aman Mithai Wala",
+  title: "Aman Mithaiwala Pvt. Ltd.",
   description: "Authentic Traditional Sweets",
 };
 

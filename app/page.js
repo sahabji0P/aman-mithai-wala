@@ -6,6 +6,7 @@ import Image from "next/image";
 import doodle from "@/public/doodle.jpeg";
 import reach from "@/public/reach.jpeg";
 import Products from "@/components/products";
+import Card from "@/components/card";
 
 
 export default function Home() {
@@ -20,10 +21,10 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <main className="p-5">
 
 
-      <div className="carousel mt-28 w-full">
+      <div className="carousel mt-32 w-full">
         <div id="slide1" className={`carousel-item relative w-full ${currentSlide === 1 ? "block" : "hidden"}`}>
           <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full transition-opacity duration-500" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -56,13 +57,36 @@ export default function Home() {
 
 
 
-      {/* <div className="flex items-center justify-center h-36 w-full bg-neutral">
-        <h1 className="text-2xl font-bold text-mono text-center text-red-50">Crafting Traditional Indian Delicacies with Modern Precision</h1>
-      </div> */}
+
+      <div className="card h-64 w-full bg-base-100 shadow-xl image-full overflow-hidden rounded-none">
+        <figure><Image
+          src={doodle}
+          alt="Doodle"
+          fill
+          className="w-full"
+
+        /></figure>
+
+        <div className="card-body items-center mt-12">
+          <h2 className="text-5xl">Authentic Traditional Indian Sweets!</h2>
+
+          {/* <p className="">If a man chews ladoos, whose ladoos does he choose?</p> */}
+        </div>
+      </div>
+
+
+
+
+
       <section id="vision">
         <Difference />
       </section>
 
+
+
+
+
+      <Card />
 
       <section id="reach">
         <Image
@@ -72,9 +96,6 @@ export default function Home() {
         />
       </section>
 
-      <section id="products">
-        <Products />
-      </section>
       <section id="about-us"><TimeLine /></section>
 
 

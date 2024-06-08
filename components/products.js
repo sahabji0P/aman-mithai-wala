@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Card from './card';
 
 export default function Products() {
     const [activeTab, setActiveTab] = useState(0);
@@ -26,7 +27,7 @@ export default function Products() {
                     className={`tab-content bg-base-100 border-base-300 rounded-box p-6 ${activeTab === 0 ? 'block' : 'hidden'
                         }`}
                 >
-                    <div className="card w-96 bg-base-100 shadow-xl image-full">
+                    {/* <div className="card w-96 bg-base-100 shadow-xl image-full ">
                         <figure><img src="https://as1.ftcdn.net/v2/jpg/02/46/31/00/1000_F_246310098_v6gBGMpR1upxO03g7awJlB0ayYhfkL5V.jpg" alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Ladoo!</h2>
@@ -35,8 +36,9 @@ export default function Products() {
                                 <button className="btn btn-primary">Details</button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
+                    <Card />
                 </div>
 
                 <input
