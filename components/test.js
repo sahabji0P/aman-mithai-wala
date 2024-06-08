@@ -16,21 +16,21 @@ export default function Test() {
             id: 1,
             title: 'Product 1',
             description: 'This is product 1',
-            image: 'https://as1.ftcdn.net/v2/jpg/02/46/31/00/1000_F_246310098_v6gBGMpR1upxO03g7awJlB0ayYhfkL5V.jpg',
+            image: weddingBhaji,
             popupContent: 'More details about product 1'
         },
         {
             id: 2,
             title: 'Product 2',
             description: 'This is product 2',
-            image: '',
+            image: weddingBhaji,
             popupContent: 'More details about product 2'
         },
         {
             id: 3,
             title: 'Product 3',
             description: 'This is product 3',
-            image: 'https://via.placeholder.com/150',
+            image: weddingBhaji,
             popupContent: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                                             enim ad minim veniam, quis nostrud exercitation ullamco laboris
                                             nisi ut aliquip ex ea commodo consequat.`
@@ -59,7 +59,7 @@ export default function Test() {
                         {products.map(product => (
                             <div key={product.id} className="relative z-10">
                                 <div className="card w-96 bg-base-100 shadow-xl image-full overflow-hidden transition-transform duration-300 hover:scale-105">
-                                    <figure><img src={product.image} alt={product.title} /></figure>
+                                    <figure><Image src={product.image} alt={product.title} className='w-full' /></figure>
                                     <div className="card-body">
                                         <h2 className="card-title">{product.title}</h2>
                                         <p>{product.description}</p>
