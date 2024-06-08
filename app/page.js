@@ -83,8 +83,8 @@ export default function Home() {
         <Difference />
       </section>
 
-      <Products />
-      {/* <Test /> */}
+      {/* <Products /> */}
+      <Test />
 
       <section id="about-us"><TimeLine /></section>
 
