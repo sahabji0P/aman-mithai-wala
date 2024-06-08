@@ -5,7 +5,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import PhoneIcon from '@mui/icons-material/Phone';
 
-import doodle from "../public/doodle.jpeg";
 
 import "./globals.css";
 import Link from "next/link";
