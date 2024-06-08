@@ -4,6 +4,8 @@ import Difference from "@/components/difference";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import doodle from "@/public/doodle.jpeg";
+import reach from "@/public/reach.jpeg";
+import Products from "@/components/products";
 
 
 export default function Home() {
@@ -56,6 +58,19 @@ export default function Home() {
 
       <Difference />
       <TimeLine />
+
+
+
+      <Image
+        src={reach}
+        alt="Doodle"
+        className="w-full"
+      />
+
+
+      <Products />
+
+
 
 
     </main>

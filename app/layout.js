@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
             <ul className="menu menu-horizontal px-1">
               <li><a>Vision</a></li>
               <li><a>Reach</a></li>
-              <li><a>Gallery</a></li>
+              <li><a>Products</a></li>
               <li><a>About Us</a></li>
               <li><a>Contact Us</a></li>
             </ul>
