@@ -20,7 +20,9 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="">
+    <main>
+
+
       <div className="carousel mt-28 w-full">
         <div id="slide1" className={`carousel-item relative w-full ${currentSlide === 1 ? "block" : "hidden"}`}>
           <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full transition-opacity duration-500" />
@@ -52,23 +54,29 @@ export default function Home() {
         </div>
       </div>
 
+
+
       {/* <div className="flex items-center justify-center h-36 w-full bg-neutral">
         <h1 className="text-2xl font-bold text-mono text-center text-red-50">Crafting Traditional Indian Delicacies with Modern Precision</h1>
       </div> */}
-
-      <Difference />
-      <TimeLine />
-
-
-
-      <Image
-        src={reach}
-        alt="Doodle"
-        className="w-full"
-      />
+      <section id="vision">
+        <Difference />
+      </section>
 
 
-      <Products />
+      <section id="reach">
+        <Image
+          src={reach}
+          alt="Doodle"
+          className="w-full"
+        />
+      </section>
+
+      <section id="products">
+        <Products />
+      </section>
+      <section id="about-us"><TimeLine /></section>
+
 
 
 

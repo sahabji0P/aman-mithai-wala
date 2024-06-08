@@ -38,11 +38,11 @@ export default function RootLayout({ children }) {
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-              <li><a>Vision</a></li>
-              <li><a>Reach</a></li>
-              <li><a>Products</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Contact Us</a></li>
+              <li><a href="#vision">Vision</a></li>
+              <li><a href="#reach">Reach</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
             </ul>
           </div>
           <div className="navbar-end p-2 mr-5">
