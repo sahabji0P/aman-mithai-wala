@@ -5,9 +5,8 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import doodle from "@/public/doodle.jpeg";
 import reach from "@/public/reach.jpeg";
+
 import Products from "@/components/products";
-import Vision from "@/components/vision";
-import Test from "@/components/test";
 
 
 export default function Home() {
@@ -59,7 +58,7 @@ export default function Home() {
 
 
 
-      <div className="card h-64 w-full bg-base-100 shadow-xl image-full overflow-hidden rounded-none">
+      <div className="card h-auto w-full bg-base-100 shadow-xl image-full overflow-hidden rounded-none mt-10">
         <figure><Image
           src={doodle}
           alt="Doodle"
@@ -68,10 +67,9 @@ export default function Home() {
 
         /></figure>
 
-        <div className="card-body items-center mt-12">
+        <div className="card-body items-center">
           <h2 className="text-5xl">Authentic Traditional Indian Sweets!</h2>
 
-          {/* <p className="">If a man chews ladoos, whose ladoos does he choose?</p> */}
         </div>
       </div>
 
@@ -84,9 +82,11 @@ export default function Home() {
       </section>
 
       {/* <Products /> */}
-      <Test />
+      <Products />
 
-      <section id="about-us"><TimeLine /></section>
+      <section id="about-us">
+        <TimeLine />
+      </section>
 
       <section id="reach">
         <Image
@@ -95,6 +95,7 @@ export default function Home() {
           className="w-full"
         />
       </section>
+
 
 
 

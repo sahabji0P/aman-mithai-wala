@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        "loop-scroll": "loop-scroll 20s linear infinite",
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
       backgroundImage: {
         "doodle-i": "url('/public/doodle.jpeg')"
       },

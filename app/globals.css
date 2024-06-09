@@ -12,6 +12,10 @@
     background-size: cover;
   }
 
+  .paused {
+    animation-play-state: paused;
+  }
+
   @keyframes zoom {
     from {
       transform: scale(0);
