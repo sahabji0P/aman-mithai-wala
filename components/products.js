@@ -126,13 +126,15 @@ export default function Products() {
         <div className="items-center justify-center flex flex-col border-y-2 mt-1 ">
 
 
-            <div className="card w-full h-96 mb-10 bg-base-100 shadow-xl rounded-none image-full">
+            <div className="card w-full h-96 mb-10 bg-base-100 shadow-xl rounded-none image-full ">
                 <figure><Image src={doodle2} alt="Shoes" className='w-full' /></figure>
                 <div className="card-body items-center">
 
                     <h2 className='text-4xl font-bold text-center mb-5 card-title'>Products</h2>
 
-                    <div className='flex mt-5 space-x-4'>
+                    <div className='flex mt-5 space-x-4 items-center'>
+
+                        {/* md:flex-col space-y-4 */}
 
                         {products.map(product => (
                             <div key={product.id} className="relative z-10">

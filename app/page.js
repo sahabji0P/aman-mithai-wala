@@ -9,6 +9,7 @@ import reach from "@/public/reach.jpeg";
 import Products from "@/components/products";
 import Map from "@/components/map";
 import Contact from "@/components/contact";
+import MapComponent from "@/components/MapComponent";
 
 
 export default function Home() {
@@ -92,7 +93,9 @@ export default function Home() {
 
 
 
-      <Map />
+      {/* <Map /> */}
+
+      <MapComponent />
 
 
       <Contact />

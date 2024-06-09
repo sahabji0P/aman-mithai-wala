@@ -213,7 +213,7 @@ export default function ContactMe() {
     return (
 
         <>
-            <div className="flex flex-col items-center justify-center border-t-2 border-cyan-400 bg-neutral py-5 text-gray-700 dark:border-0 dark:text-white sm:flex-row">
+            <div className="flex flex-col items-center justify-center border-t-2 border-cyan-400 bg-base-300 py-5 text-gray-700 dark:border-0 dark:text-black sm:flex-row">
                 <div className="min-w-1/2 flex flex-col justify-center sm:mr-10">
                     <h2 className="pb-8 pt-8 text-5xl sm:pt-0">Get in touch</h2>
                     <span className="flex items-center pb-4">
