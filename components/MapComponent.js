@@ -8,7 +8,7 @@ const MapComponent = () => {
     return (
         <div>
             <div className={styles.container}>
-                <Image src={map} alt="Map" width={1232} height={768} className='relative -z-10' />
+                <Image src={map} alt="Map" width={1232} height={768} className='relative -z-10 md:w-full' />
                 <div className={`${styles.smallContainer} ${styles.one}`}>
                     <div className={styles.popup}>
                         <h1>Hyderabad</h1>
