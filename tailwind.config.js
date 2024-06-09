@@ -7,6 +7,26 @@ module.exports = {
   ],
   theme: {
     extend: {
+      margin: {
+        'delhi-xl-l': '535px',
+        'delhi-xl-t': '270px',
+        'delhi-l': '240px',
+        'delhi-t': '115px',
+        'delhi-lg-l': '365px',
+        'delhi-lg-t': '180px',
+        'delhi-sm-l': '210px',
+        'delhi-sm-t': '100px',
+
+        'hyderabad-xl-l': '635px',
+        'hyderabad-xl-t': '390px',
+        'hyderabad-l': '280px',
+        'hyderabad-t': '165px',
+        'hyderabad-lg-l': '425px',
+        'hyderabad-lg-t': '255px',
+        'hyderabad-sm-l': '240px',
+        'hyderabad-sm-t': '145px',
+
+      },
       animation: {
         "loop-scroll": "loop-scroll 20s linear infinite",
       },

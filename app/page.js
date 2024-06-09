@@ -7,6 +7,8 @@ import doodle from "@/public/doodle.jpeg";
 import reach from "@/public/reach.jpeg";
 
 import Products from "@/components/products";
+import Map from "@/components/map";
+import Contact from "@/components/contact";
 
 
 export default function Home() {
@@ -88,15 +90,12 @@ export default function Home() {
         <TimeLine />
       </section>
 
-      <section id="reach">
-        <Image
-          src={reach}
-          alt="Doodle"
-          className="w-full"
-        />
-      </section>
 
 
+      <Map />
+
+
+      <Contact />
 
 
     </main>
