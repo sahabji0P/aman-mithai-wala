@@ -95,7 +95,7 @@ export default function Home() {
 
       {/* <Map /> */}
 
-      {/* <MapComponent /> */}
+      <MapComponent />
 
 
       <Contact />

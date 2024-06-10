@@ -1,11 +1,8 @@
-/* components/MapComponent.module.css */
-
 .container {
   position: relative;
-  width: 1232px;
-  height: 768px;
+  width: 100%;
+  height: auto;
   margin: auto;
-  /* background-image: url("/public/reach.jpeg");  */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -13,48 +10,102 @@
 }
 
 .smallContainer {
-  height: 30px;
-  background-color: #81a263;
+  width: 4%;
+  height: 4%;
+  background-color: transparent;
   z-index: 1;
-  border: 2px solid black;
-  position: relative; /* Ensure pop-up position is relative to the container */
-  opacity: 0; /* Initially invisible */
-  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .one {
-  width: 150px;
-  position: absolute;
-  margin-top: 340px;
-  margin-left: 520px;
+  left: 46%;
+  top: 42%;
 }
 
 .two {
-  width: 70px;
-  position: absolute;
-  margin-left: 460px;
-  margin-top: 250px;
+  left: 38%;
+  top: 30%;
+}
+.three {
+  left: 34%;
+  top: 35%;
 }
 
-/* Pop-up styles */
+.mapArrow {
+  font-size: 24px;
+  z-index: -5;
+  color: red;
+}
+
 .popup {
   border-radius: 10px;
   display: none;
   position: absolute;
-  background-color: #81a263;
-  padding: 10px;
+  background-color: white;
+  padding: 20px;
   border: 1px solid black;
-  z-index: 2; /* Ensure pop-up is above the purple container */
+  top: 0;
+  z-index: 1000;
 }
 
-/* Show pop-up on hover */
 .smallContainer:hover .popup {
   display: block;
-  height: 500px;
-  width: 500px;
 }
 
-/* Show purple color when hovering */
-.smallContainer:hover {
-  opacity: 1; /* Make purple color visible on hover */
+.smallContainer:hover .mapArrow {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .smallContainer {
+    width: 8%;
+    height: 8%;
+  }
+
+  .one {
+    left: 45%;
+    top: 46%;
+  }
+
+  .two {
+    left: 40%;
+    top: 34%;
+  }
+  .three {
+    left: 30%;
+    top: 30%;
+  }
+
+  /* .popup {
+    width: 60vw;
+    height: 60vh;
+  } */
+}
+
+@media (max-width: 640px) {
+  .smallContainer {
+    width: 10%;
+    height: 10%;
+  }
+
+  .one {
+    left: 43%;
+    top: 35%;
+  }
+
+  .two {
+    left: 35%;
+    top: 25%;
+  }
+
+  .popup {
+    width: 90vw;
+    height: 60vh;
+  }
 }
