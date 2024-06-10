@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        '90': '340px',
+      },
       margin: {
         'delhi-xl-l': '535px',
         'delhi-xl-t': '270px',
@@ -25,6 +28,7 @@ module.exports = {
         'hyderabad-lg-t': '255px',
         'hyderabad-sm-l': '240px',
         'hyderabad-sm-t': '145px',
+        '100': '390px'
 
       },
       animation: {

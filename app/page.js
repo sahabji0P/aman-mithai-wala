@@ -85,7 +85,7 @@ export default function Home() {
       </section>
 
       {/* <Products /> */}
-      {/* <Products /> */}
+      <Products />
 
       <section id="about-us">
         <TimeLine />
