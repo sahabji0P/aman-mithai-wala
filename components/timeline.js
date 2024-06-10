@@ -11,7 +11,7 @@ export default function TimeLine() {
 
                 <div className=" w-full flex flex-col items-center justify-between pt-3 space-x-4">
 
-                    <div className="p-8 pt-4 w-full">
+                    <div className="p-24 pt-4 w-full">
                         <h2 className="text-4xl font-bold text-left ">About Us</h2>
                         {/* Add your About Us content here */}
                         <p className="pt-3">Aman Mithaiwala Pvt. Ltd. is a family-owned business dedicated to preserving the rich heritage of traditional Indian sweets. Established in [Year], we craft authentic and delectable sweets using time-honored recipes and techniques.
@@ -31,7 +31,7 @@ export default function TimeLine() {
                 <div className="w-full flex flex-col md:items-center md:justify-between pt-3">
 
                     <div className="p-8 pt-4">
-                        <h2 className="text-4xl font-bold text-left md:text-center mb-5">Story Line</h2>
+                        <h2 className="text-4xl font-bold text-left md:text-center mb-5">Our Jouney</h2>
 
                         <div className="items-center justify-between font-mono text-sm lg:flex">
                             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical ">
