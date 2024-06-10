@@ -9,7 +9,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { HiMenuAlt1 } from "react-icons/hi";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 
@@ -22,56 +22,10 @@ export default function Navbar() {
 
     }
 
+
+
     return (
 
-        // <nav className=" bg-base-100 z-50 shadow-xl fixed w-full h-24">
-
-        //     <div className=" navbar flex item-center justify-between h-full w-full px-4 2xl:px-16">
-
-        //         <div className="navbar-start">
-
-        //             <Link href="/">
-        //                 <Image
-        //                     className="p-2 ml-8 cursor-pointer"
-        //                     src={logo}
-        //                     alt="logo"
-        //                     width={160}
-        //                     height={100}
-        //                 />
-        //             </Link>
-
-        //         </div>
-
-        //         <div className="navbar-center hidden sm:flex">
-        //             <ul className="menu menu-horizontal px-1 hidden sm:flex">
-        //                 <li ><a href="#vision">Vision</a></li>
-        //                 <li><a href="#reach">Reach</a></li>
-        //                 <li><a href="#products">Products</a></li>
-        //                 <li><a href="#about-us">About Us</a></li>
-        //                 <li><a href="#contact-us">Contact Us</a></li>
-        //             </ul>
-        //         </div>
-
-        //         <div className="navbar-end p-2 hidden sm:flex mr-5">
-        //             <div className="flex items-center space-x-4 btn">
-
-        //                 <InstagramIcon />
-        //                 <FacebookIcon />
-        //                 <PhoneIcon />
-        //             </div>
-
-
-        //         </div>
-
-        //         <div className="sm:hidden cursor-pointer pl-24" onClick={handleNav}>
-        //             <AiOutlineMenu size={25} />
-        //         </div>
-
-
-        //     </div>
-
-
-        // </nav>
 
 
         <nav className=" bg-base-100 z-50 shadow-xl fixed w-full h-24">
@@ -92,17 +46,28 @@ export default function Navbar() {
 
 
 
-                <div className="hidden items-center sm:flex">
-                    <ul className="menu menu-horizontal text-base px-1 hidden sm:flex">
+                <div className="hidden items-center md:flex">
+                    <ul className="menu menu-horizontal text-base px-1 hidden md:flex">
                         <li ><a href="#vision">Vision</a></li>
                         <li><a href="#reach">Reach</a></li>
                         <li><a href="#products">Products</a></li>
-                        <li><a href="#about-us">About Us</a></li>
-                        <li><a href="#contact-us">Contact Us</a></li>
+                        <li><Link href="#Aboutus" offset={-160}>About Us</Link></li>
+                        <li>
+                            <Link
+                                href='#contact'
+                                duration={500}
+                                offset={-160}
+
+                                className="group transition duration-300 hover:cursor-pointer"
+                            >
+                                Contact Us
+                            </Link>
+
+                        </li>
                     </ul>
                 </div>
 
-                <div className="p-2 items-center hidden sm:flex mr-5">
+                <div className="p-2 items-center hidden md:flex mr-5">
                     <div className="flex items-center space-x-4 btn">
 
                         <InstagramIcon />
@@ -111,14 +76,14 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                <div className="sm:hidden cursor-pointer mt-8 mr-4" onClick={handleNav}>
+                <div className="md:hidden cursor-pointer mt-8 mr-4" onClick={handleNav}>
                     <HiMenuAlt1 size={30} />
                 </div>
             </div>
 
             <div className={
                 menuOpen
-                    ? "fixed left-0 top-0 w-[75%] h-screen bg-base-100 z-50 shadow-xl p-10 ease-in duration-300 md:hidden"
+                    ? "fixed left-0 top-0 w-[75%] h-screen bg-base-100 z-50 shadow-xl p-10 ease-in duration-300 lg:hidden"
                     : "fixed left-[-100%] top-0 p-10 ease-in-out duration-300"
             }>
 

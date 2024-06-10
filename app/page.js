@@ -81,11 +81,11 @@ export default function Home() {
 
 
       <section id="vision">
-        <Difference />
+        {/* <Difference /> */}
       </section>
 
       {/* <Products /> */}
-      <Products />
+      {/* <Products /> */}
 
       <section id="about-us">
         <TimeLine />
@@ -95,7 +95,7 @@ export default function Home() {
 
       {/* <Map /> */}
 
-      <MapComponent />
+      {/* <MapComponent /> */}
 
 
       <Contact />
