@@ -23,7 +23,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="p-5">
+    <main className="p-2 ">
 
 
       <div className="carousel mt-32 lg:h-96 w-full">
