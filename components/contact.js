@@ -65,16 +65,16 @@ export default function ContactMe() {
         <>
             {/* <Element name="contact-us" className="relative"></Element> */}
 
-            <section id='contact'></section>
+
 
             <div className="flex flex-col items-center justify-center border-t-2 border-cyan-400 bg-base-300 py-5 text-gray-700 dark:border-0 dark:text-black sm:flex-row">
                 <div className="min-w-1/2 flex flex-col justify-center sm:mr-10">
-                    <h2 className="pb-8 pt-8 text-5xl sm:pt-0">Get in touch</h2>
+                    <h2 className="pb-8 pt-8 text-5xl sm:pt-0 playfair_display font-bold">Get in touch</h2>
                     <span className="flex items-center pb-4">
                         <AiOutlineMail className="mr-2" />
                         <Link
                             href="mailto: chiragaggarwal5k@gmail.com"
-                            className="group transition duration-300"
+                            className="group transition duration-300 jakarta"
                             rel="noreferrer"
                             target="_blank"
                         >
@@ -87,7 +87,7 @@ export default function ContactMe() {
                         <Link
                             href="https://wa.me/7417007139"
                             rel="noreferrer"
-                            className="group transition duration-300"
+                            className="group transition duration-300 jakarta"
                             target="_blank"
                         >
                             +91 7417007139
@@ -99,7 +99,7 @@ export default function ContactMe() {
                         <Link
                             href="#"
                             rel="noreferrer"
-                            className="group transition duration-300"
+                            className="group transition duration-300 jakarta"
                             target="_blank"
                         >
                             Download Catalog
@@ -153,7 +153,7 @@ export default function ContactMe() {
 
 
             </div>
-            <footer className="flex flex-row justify-center items-center bg-gray-800 text-white p-4 text-sm space-x-1">
+            <footer className="flex flex-row justify-center items-center bg-gray-800 text-white p-4 text-sm space-x-1 jakarta">
                 <p className='text-xs text-balance text-center'>©2024 |</p>
                 <p className='text-xs text-balance text-center'>Designed By Shashwat Jain |</p>
                 <p className='text-xs text-balance text-center'>All rights reserved.</p>

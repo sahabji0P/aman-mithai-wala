@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        '90': '340px',
+        '98': '390px',
       },
       margin: {
         'delhi-xl-l': '535px',
@@ -49,6 +49,6 @@ module.exports = {
     require('daisyui'),
   ],
   daisyui: {
-    themes: ["retro"],
+    themes: ["light"],
   },
 };

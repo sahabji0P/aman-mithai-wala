@@ -1,11 +1,16 @@
 import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 
 
 import "./globals.css";
 import Navbar from "@/components/navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+const playfair = Playfair_Display({ subsets: ["latin"], weight: '500', variable: '--font-playfair_display' });
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: '--font-jakarta' });
 
 export const metadata = {
   title: "Aman Mithaiwala Pvt. Ltd.",
@@ -16,7 +21,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${playfair.variable} ${jakarta.variable}`}>
 
 
         {/* <nav className="navbar bg-base-100 z-50 shadow-xl fixed w-full">
@@ -38,6 +43,6 @@ export default function RootLayout({ children }) {
         {children}
 
       </body>
-    </html>
+    </html >
   );
 }

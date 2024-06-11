@@ -54,6 +54,7 @@
   top: 0;
   z-index: 1000;
   width: 800%;
+  animation: ease-in 300ms;
 }
 
 .smallContainer:hover .popup {

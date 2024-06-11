@@ -18,6 +18,14 @@
     animation-play-state: paused;
   }
 
+  .c-size {
+    height: 460px;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+
   @keyframes zoom {
     from {
       transform: scale(0);
@@ -25,5 +33,12 @@
     to {
       transform: scale(1);
     }
+  }
+
+  .jakarta {
+    font-family: var(--font-jakarta);
+  }
+  .playfair_display {
+    font-family: var(--font-playfair_display);
   }
 }
