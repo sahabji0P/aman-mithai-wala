@@ -7,7 +7,7 @@ export default function TimeLine() {
 
             <section id='Aboutus'></section>
 
-            <div className="my-12 py-2 flex flex-col w-full border-y-2 border-black dark:border-neutral-800 rounded-xl bg-neutral text-white lg:flex-row">
+            <div className="my-1 py-2 flex flex-col w-full border-y-2 border-black dark:border-neutral-800 rounded-xl bg-neutral text-white lg:flex-row">
 
                 <div className=" w-full flex flex-col items-center justify-between pt-3 space-x-4">
 

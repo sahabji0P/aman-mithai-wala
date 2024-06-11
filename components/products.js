@@ -73,7 +73,7 @@ export default function Products() {
 
     return (
 
-        <div className="card w-full h-auto mb-10 bg-base-100 shadow-xl rounded-xl image-full mt-1 flex flex-col overflow-x-hidden lg-h-auto">
+        <div className="card w-full h-auto mb-1 bg-base-100 shadow-xl rounded-xl image-full mt-1 flex flex-col overflow-x-hidden lg-h-auto">
             <figure><Image src={doodle2} alt="Shoes" className='w-full' /></figure>
 
             <div className="card-body items-center justify-center h-auto">
