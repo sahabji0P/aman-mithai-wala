@@ -4,11 +4,12 @@ import Difference from "@/components/difference";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import doodle from "@/public/doodle.jpeg";
-import reach from "@/public/reach.jpeg";
 
 import Products from "@/components/products";
 import Contact from "@/components/contact";
 import MapComponent from "@/components/MapComponent";
+import Distributors from "@/components/distributors";
+import MarqueeComponent from "@/components/Alerts/hyderabad";
 
 
 export default function Home() {
@@ -26,36 +27,27 @@ export default function Home() {
     <main className="p-2 ">
 
 
-      <div className="carousel mt-32 lg:h-96 w-full">
+      <div className="carousel mt-32 h-fit overflow-hidden w-full">
         <div id="slide1" className={`carousel-item relative w-full ease-in-out duration-500 ${currentSlide === 1 ? "block" : "hidden"}`}>
-          <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full ease-in-out duration-500" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" className="btn btn-circle">❮</a>
-            <a href="#slide2" className="btn btn-circle">❯</a>
-          </div>
+          <img src="https://images.unsplash.com/photo-1590671909091-43ff144014fe?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            className="w-full c-size ease-in-out duration-500" />
+
         </div>
         <div id="slide2" className={`carousel-item relative w-full ease-in-out duration-500 ${currentSlide === 2 ? "block" : "hidden"}`}>
-          <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" className="w-full ease-in-out duration-500" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" className="btn btn-circle">❮</a>
-            <a href="#slide3" className="btn btn-circle">❯</a>
-          </div>
+          <img src="https://as2.ftcdn.net/v2/jpg/03/19/41/49/1000_F_319414948_uvA83zUdiwk4KAd019zHGbSW3YzyAPBu.jpg" className="w-full c-size ease-in-out duration-500" />
+
         </div>
         <div id="slide3" className={`carousel-item relative w-full ease-in-out duration-500 ${currentSlide === 3 ? "block" : "hidden"}`}>
-          <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" className="w-full ease-in-out duration-500" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" className="btn btn-circle">❮</a>
-            <a href="#slide4" className="btn btn-circle">❯</a>
-          </div>
+          <img src="https://c1.wallpaperflare.com/preview/821/873/153/indian-sweets-sweets-indian-culture.jpg" className="w-full c-size ease-in-out duration-500" />
+
         </div>
         <div id="slide4" className={`carousel-item relative w-full ease-in-out duration-500 ${currentSlide === 4 ? "block" : "hidden"}`}>
-          <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" className="w-full ease-in-out duration-500" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" className="btn btn-circle">❮</a>
-            <a href="#slide1" className="btn btn-circle">❯</a>
-          </div>
+          <img src="https://as1.ftcdn.net/v2/jpg/04/84/94/58/1000_F_484945880_yqcmUlx4PR22FnuLWEknDRji2RLiM8Nh.jpg" className="w-full c-size ease-in-out duration-500" />
+
         </div>
       </div>
+
+      <MarqueeComponent />
 
 
 
@@ -73,35 +65,32 @@ export default function Home() {
           /></figure>
 
           <div className="card-body items-center justify-center">
-            <h2 className="text-6xl playfair_display font-bold">Authentic Traditional Indian Sweets!</h2>
+            <h2 className="text-6xl playfair_display font-bold">INDIA's first Wholesale Brand in Indian Sweets</h2>
 
           </div>
         </div>
       </section>
-
-      <section id="difference">
-        <Difference />
-      </section>
+      <Difference />
 
 
-      <section id="products">
-        <Products />
+      <Products />
+      {/* <TabsP /> */}
+      {/* <PopupTable /> */}
 
-      </section>
 
 
-      <section id="about-us">
-        <TimeLine />
-      </section>
+      <Distributors />
 
-      <section id="reach">
+      <TimeLine />
 
-        <MapComponent />
-      </section>
 
-      <section id='contact'>
-        <Contact />
-      </section>
+      <MapComponent />
+
+
+      <Contact />
+
+
+
 
 
 

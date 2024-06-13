@@ -5,12 +5,29 @@ import { useEffect } from 'react'
 
 import Image from 'next/image'
 import weddingBhaji from '@/public/weddingBhaji.jpg'
-import cc from '@/public/catalog.jpg'
+import c1 from '@/public/catalog.jpg'
+import c2 from '@/public/catalog1.jpg'
+import c3 from '@/public/catalog3.jpg'
+
+import rLadoos from '@/public/Products/ladoo.jpg'
+import bikaneriBurfi from '@/public/Products/bikaneriBurfi.jpg'
+import kajuKatli from '@/public/Products/kk.jpg'
+import doda from '@/public/Products/doda.jpg'
+
+
+import Link from 'next/link'
+
+import b2 from '@/public/Bhaji/2.jpg'
+
+
 
 
 export default function Products() {
     const [showPopup, setShowPopup] = useState(false);
     const [showPopup2, setShowPopup2] = useState(false);
+
+    const [popupTitle, setPopupTitle] = useState('');
+    const [popupDescription, setPopupDescription] = useState('');
 
     const [popupContent, setPopupContent] = useState('');
     const [popupImage, setPopupImage] = useState('');
@@ -19,23 +36,46 @@ export default function Products() {
     const products = [
         {
             id: 1,
-            title: 'Ladoos',
-            description: 'Indian sweets made with love and care',
-            image: weddingBhaji,
+            title: 'Rajasthani Ladoo',
+            description: 'Made with pure besan, refined, dry fruits and sugar',
+            image: rLadoos,
+            pimage: rLadoos,
             popupContent: 'More details about product 1'
         },
         {
             id: 2,
-            title: 'Bikaneri Barfi',
-            description: 'Barfi made with the finest ingredients',
-            image: weddingBhaji,
+            title: 'Bikaneri Burfi',
+            description: 'Roasted with pure milk solids, and sugar, and garnished with dry fruits',
+            image: bikaneriBurfi,
+            pimage: bikaneriBurfi,
             popupContent: 'More details about product 2'
         },
         {
             id: 3,
+            title: 'Kaju Katli',
+            description: 'Made with pure kaju, desi ghee, elaichi, varak and sugar',
+            image: kajuKatli,
+            pimage: kajuKatli,
+            popupContent: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat.`
+        },
+        {
+            id: 4,
+            title: 'Desi Ghee Doda Barfi',
+            description: 'Made with desi ghee, milk solids, dry fruits, atta and sugar',
+            image: doda,
+            pimage: doda,
+            popupContent: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat.`
+        },
+        {
+            id: 5,
             title: 'Wedding Bhaji',
             description: 'A traditional Indian gift for weddings and other special occasions',
             image: weddingBhaji,
+            pimage: b2,
             popupContent: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                                             enim ad minim veniam, quis nostrud exercitation ullamco laboris
                                             nisi ut aliquip ex ea commodo consequat.`
@@ -47,13 +87,16 @@ export default function Products() {
         {
             id: 1,
             popupContent: 'More details about the catalog',
-            image: cc,
+            image: [c1, c2, c3],
         },
     ];
 
 
-    const togglePopup = (content) => {
-        setPopupContent(content);
+    const togglePopup = (product) => {
+        setPopupTitle(product.title);
+        setPopupDescription(product.description);
+        setPopupContent(product.popupContent);
+        setPopupImage(product.pimage);
         setShowPopup(!showPopup);
     };
 
@@ -74,11 +117,14 @@ export default function Products() {
     return (
 
         <div className="card w-full h-auto mb-1 bg-base-100 shadow-xl rounded-xl image-full mt-1 flex flex-col overflow-x-hidden lg-h-auto">
+            <section id="products">
+
+            </section>
             <figure><Image src={doodle2} alt="Shoes" className='w-full' /></figure>
 
             <div className="card-body items-center justify-center h-auto">
 
-                <h2 className='text-4xl font-bold text-center mb-10 card-title playfair_display md:text-5xl'>Products</h2>
+                <h2 className='text-4xl font-bold text-center mb-10 card-title playfair_display md:text-6xl'>Our Delicacy</h2>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-2'>
 
@@ -92,7 +138,7 @@ export default function Products() {
                                     <h2 className="card-title jakarta font-bold">{product.title}</h2>
                                     <p className='jakarta'>{product.description}</p>
                                     <div className="card-actions justify-end">
-                                        <button className="btn btn-primary jakarta font-bold" onClick={() => togglePopup(product.popupContent)}>Details</button>
+                                        <button className="btn btn-primary jakarta font-bold" onClick={() => togglePopup(product)}>Details</button>
                                     </div>
                                 </div>
                             </ div>
@@ -101,8 +147,28 @@ export default function Products() {
 
                     {showPopup && (
                         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
-                            <div className="bg-white p-5 rounded-lg text-black animate-zoom fixed shadow-lg mx-8 md:mx-24">
-                                <p className='jakarta'>{popupContent}</p>
+                            <div className="bg-white p-5 rounded-lg text-black animate-zoom z-50 overflow-auto c-size fixed shadow-lg mx-8 md:mx-24">
+
+                                <h2 className=' jakarta font-bold mb-2 text-2xl text-center md:text-left md:ml-2'>{popupTitle}</h2>
+
+                                <div className='md:flex'>
+                                    <Image src={popupImage} alt={popupTitle} className='w-80 h-72 rounded-2xl shadow-lg mr-4' />
+                                    <div >
+                                        <p className='jakarta pr-4 text-left justify-between mt-5'>{popupDescription}</p>
+                                        <Link
+                                            href="https://wa.me/+918800614952"
+                                            rel="noreferrer"
+                                            className="group transition duration-300 jakarta"
+                                            target="_blank"
+                                        ><button className='btn btn-primary mt-5'>Contact Us for more details</button>
+                                        </Link>
+                                    </div>
+
+                                </div>
+
+
+
+
                                 <button className="btn btn-neutral mt-5 jakarta font-bold" onClick={() => togglePopup('')}>Close</button>
                             </div>
                         </div>
@@ -110,6 +176,8 @@ export default function Products() {
 
 
                 </div>
+
+
                 {catalog.map(product => (
                     <div key={product.id}>
                         <div className='card-actions justify-end mt-10'>
@@ -120,10 +188,19 @@ export default function Products() {
 
                 {showPopup2 && (
                     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
-                        <div className="bg-white p-5 rounded-lg text-black animate-zoom fixed shadow-lg mt-28 mb-10 overflow-auto overflow-x-hidden mx-8 md:mx-24">
-                            <p className='jakarta'>{popupContent}</p>
-                            <Image src={popupImage} alt="Product" />
-                            <button className="btn btn-neutral mt-5 jakarta font-bold" onClick={() => togglePopup2('')}>Close</button>
+                        <div className="bg-white p-5 rounded-lg text-black animate-zoom fixed shadow-lg mt-28 mb-10 overflow-auto c-size mx-8 md:mx-24">
+
+                            <h1 className='font-bold text-3xl md:text-5xl text-left mb-5 jakarta'>Catalog</h1>
+
+                            <div className='grid gird-cols-1 md:grid-cols-2 gap-5 mx-2'>
+
+                                {popupImage.map((image, index) => (
+                                    <Image src={image} alt={`Catalog ${index + 1}`} key={index} className='w-size c-size mb-3' />
+                                ))}
+                            </div>
+
+
+                            <button button className="btn btn-neutral mt-5 jakarta font-bold" onClick={() => togglePopup2('')}>Close</button>
                         </div>
                     </div>
                 )}
@@ -132,7 +209,7 @@ export default function Products() {
 
             </div >
 
-        </div>
+        </div >
 
     );
 }

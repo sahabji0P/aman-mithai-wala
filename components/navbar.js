@@ -126,6 +126,7 @@ import logo from "../public/logo.png";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import PhoneIcon from '@mui/icons-material/Phone';
+import { Mail, WhatsApp } from "@mui/icons-material";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { HiMenuAlt1 } from "react-icons/hi";
@@ -181,10 +182,12 @@ export default function Navbar() {
 
                 <div className="hidden items-center md:flex">
                     <ul className="menu menu-horizontal text-base px-1 hidden md:flex jakarta font-semibold">
-                        <li><a href="/">Home</a></li>
+                        {/* <li><a href="/">Home</a></li> */}
                         {/* <li><a href="#vision">Vision</a></li> */}
                         <li><a href="#difference">Our Edge</a></li>
                         <li><a href="#products">Our Delicacy</a></li>
+                        <li><a href="#distributors">Distributors</a></li>
+
                         <li><Link href="#about-us" offset={-160}>About Us</Link></li>
                         <li><a href="#reach">Our Reach</a></li>
                         <li>
@@ -204,10 +207,11 @@ export default function Navbar() {
                 </div>
 
                 <div className="p-2 items-center hidden md:flex mr-5">
-                    <div className="flex items-center space-x-4 btn">
-                        <InstagramIcon />
-                        <FacebookIcon />
-                        <PhoneIcon />
+                    <div className="flex items-center space-x-4">
+                        <Link href="https://www.instagram.com/aman_mithaiwala?igsh=NDlzOHhlMW5majc=" target="_blank"><InstagramIcon /></Link>
+                        <Link href="https://www.facebook.com/profile.php?id=100089763180304&mibextid=ZbWKwL" target="_blank"><FacebookIcon /></Link>
+                        <Link href="https://wa.me/+918800614952" target="_blank"><WhatsApp /></Link>
+                        <Link href="mailto: sales@amanmithaiwala.com" target="_blank"><Mail /></Link>
                     </div>
                 </div>
 
@@ -229,10 +233,11 @@ export default function Navbar() {
 
                 <div className="flex-col py-4">
                     <ul className="menu menu-vertical py-5 text-xl jakarta font-semibold">
-                        <li onClick={() => setMenuOpen(false)} className="py-4"><a href="/">Home</a></li>
+                        {/* <li onClick={() => setMenuOpen(false)} className="py-4"><a href="/">Home</a></li> */}
                         {/* <li onClick={() => setMenuOpen(false)} className="py-4"><a href="#vision">Vision</a></li> */}
                         <li onClick={() => setMenuOpen(false)} className="py-4"><a href="#difference">Our Edge</a></li>
                         <li onClick={() => setMenuOpen(false)} className="py-4"><a href="#products">Our Delicacy</a></li>
+                        <li onClick={() => setMenuOpen(false)} className="py-4"><a href="#distributors">Distributors</a></li>
                         <li onClick={() => setMenuOpen(false)} className="py-4"><a href="#about-us">About Us</a></li>
                         <li onClick={() => setMenuOpen(false)} className="py-4"><a href="#reach">Our Reach</a></li>
                         <li onClick={() => setMenuOpen(false)} className="py-4"><a href="#contact">Contact Us</a></li>
@@ -241,10 +246,12 @@ export default function Navbar() {
                 </div>
 
                 <div>
-                    <div className="flex-row justify-around space-x-8 ml-10 item-center">
-                        <InstagramIcon />
-                        <FacebookIcon />
-                        <PhoneIcon />
+                    <div className="flex-row justify-around space-x-8 ml-5 item-center">
+                        <Link href="https://www.instagram.com/aman_mithaiwala?igsh=NDlzOHhlMW5majc=" target="_blank"><InstagramIcon /></Link>
+                        <Link href="https://www.facebook.com/profile.php?id=100089763180304&mibextid=ZbWKwL" target="_blank"><FacebookIcon /></Link>
+                        <Link href="https://wa.me/+918800614952" target="_blank"><WhatsApp /></Link>
+                        <Link href="mailto: sales@amanmithaiwala.com" target="_blank"><Mail /></Link>
+
                     </div>
                 </div>
             </div>

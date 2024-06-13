@@ -21,6 +21,9 @@
   .c-size {
     height: 460px;
   }
+  .w-size {
+    width: 560px;
+  }
 
   .no-scroll {
     overflow: hidden;

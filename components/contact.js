@@ -3,6 +3,10 @@ import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import Link from 'next/link';
 
+import BusinessIcon from '@mui/icons-material/Business';
+
+import PhoneInput from 'react-phone-input-2'
+
 import { Element } from 'react-scroll';
 
 const validateEmail = (email) => {
@@ -60,52 +64,55 @@ export default function ContactMe() {
                 }
             );
     };
+
+    const [value, setValue] = useState()
     return (
 
         <>
             {/* <Element name="contact-us" className="relative"></Element> */}
 
 
-
+            <section id='contact'>
+            </section>
             <div className="flex flex-col items-center justify-center border-t-2 border-cyan-400 bg-base-300 py-5 text-gray-700 dark:border-0 dark:text-black sm:flex-row">
                 <div className="min-w-1/2 flex flex-col justify-center sm:mr-10">
                     <h2 className="pb-8 pt-8 text-5xl sm:pt-0 playfair_display font-bold">Get in touch</h2>
-                    <span className="flex items-center pb-4">
-                        <AiOutlineMail className="mr-2" />
-                        <Link
-                            href="mailto: chiragaggarwal5k@gmail.com"
-                            className="group transition duration-300 jakarta"
-                            rel="noreferrer"
-                            target="_blank"
-                        >
-                            shashwatj.job@gmail.com
-                            <span className="block h-0.5 max-w-0 bg-black transition-all duration-500 group-hover:max-w-full dark:bg-white"></span>
-                        </Link>
+
+                    <span className="flex flex-col items-left pb-4">
+
+                        <p className='font-bold jakarta hover:underline-offset-1'>Head Office:</p>
+                        <p className=' jakarta'>E-809, DSIIDC, Narela Industrial Area,</p>
+                        <p className=' jakarta'>New Delhi - 110040</p>
+                        <p className='jakarta font-semibold'> Phone No: +91-8800614952</p>
+
+
+
                     </span>
-                    <span className="flex items-center pb-4">
-                        <AiOutlineWhatsApp className="mr-2" />
-                        <Link
-                            href="https://wa.me/7417007139"
-                            rel="noreferrer"
-                            className="group transition duration-300 jakarta"
-                            target="_blank"
-                        >
-                            +91 7417007139
-                            <span className="block h-0.5 max-w-0 bg-black transition-all duration-500 group-hover:max-w-full dark:bg-white"></span>
-                        </Link>
+
+                    <span className="flex flex-col items-left pb-4">
+
+                        <p className='font-bold jakarta hover:underline-offset-1'>Factory Outlet:</p>
+                        <p className=' jakarta'>M-19/A-6, M Block, Dilshad Garden,</p>
+                        <p className=' jakarta'> Delhi - 110095</p>
+                        <p className=' jakarta font-semibold'> Phone No: +91-9319674090</p>
+
+
                     </span>
-                    <span className="flex items-center">
-                        <AiOutlineLink className="mr-2" />
-                        <Link
-                            href="#"
-                            rel="noreferrer"
-                            className="group transition duration-300 jakarta"
-                            target="_blank"
-                        >
-                            Download Catalog
-                            <span className="block h-0.5 max-w-0 bg-black transition-all duration-500 group-hover:max-w-full dark:bg-white"></span>
-                        </Link>
+
+                    <span className="flex flex-col items-left pb-4">
+
+                        <p className='font-bold jakarta hover:underline-offset-1'>Hyderabad Branch:</p>
+                        <p className=' jakarta'>Plot No.43, IDA Opp. Bharat Electornics Ltd  </p>
+                        <p className=' jakarta'>Mallapur, Hyderabad, Telangana - 500076</p>
+                        <p className=' jakarta font-semibold'> Phone No: +91-8977754490</p>
+
+
+
                     </span>
+
+
+
+
                 </div>
 
                 <form
@@ -120,6 +127,16 @@ export default function ContactMe() {
                         required
                         className="mb-2 h-10 max-w-xl rounded-lg border-2 bg-white p-5 text-sm hover:border-cyan-500 dark:border-transparent dark:bg-white dark:hover:border-gray-700"
                     />
+
+                    <input
+                        type="number"
+                        placeholder="Your Phone Number"
+                        name="from_number"
+                        minLength={10}
+                        required
+                        className="mb-2 h-10 max-w-xl rounded-lg border-2 bg-white p-5 text-sm hover:border-cyan-500 dark:border-transparent dark:bg-white dark:hover:border-gray-700"
+                    />
+
                     <input
                         type="email"
                         placeholder="Your Email"
@@ -154,9 +171,11 @@ export default function ContactMe() {
 
             </div>
             <footer className="flex flex-row justify-center items-center bg-gray-800 text-white p-4 text-sm space-x-1 jakarta">
-                <p className='text-xs text-balance text-center'>©2024 |</p>
-                <p className='text-xs text-balance text-center'>Designed By Shashwat Jain |</p>
-                <p className='text-xs text-balance text-center'>All rights reserved.</p>
+                <p className='text-xs text-balance text-center'>©2024 Aman Mithaiwala Pvt. Ltd |</p>
+
+                <Link href="https://www.instagram.com/web.landers/" target='_blank'>
+                    <p className='text-xs text-balance text-center font-semibold'>Powered By WebLanders</p>
+                </Link>
             </footer>
         </>
     );

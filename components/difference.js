@@ -13,6 +13,9 @@ export default function Difference() {
     return (
 
         <div className="card w-full h-auto md:c-size shadow-xl image-full overflow-hidden mt-1">
+            <section id="difference">
+            </section>
+
             <figure><Image src={laddos} alt="Shoes" className='w-full' /></figure>
 
             <div className="card-body items-center overflow-x-hidden">
