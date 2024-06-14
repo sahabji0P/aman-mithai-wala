@@ -132,7 +132,7 @@ export default function Duplicate() {
 
             <div className="card-body items-center justify-center h-auto">
 
-                <h2 className='text-4xl font-bold text-center mb-10 card-title playfair_display md:text-6xl'>Our Delicacy</h2>
+                <h2 data-aos="fade-right" className='text-4xl font-bold text-center mb-10 card-title playfair_display md:text-6xl'>Our Delicacy</h2>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-2'>
 

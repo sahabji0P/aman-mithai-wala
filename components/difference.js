@@ -20,7 +20,7 @@ export default function Difference() {
 
             <div className="card-body items-center overflow-x-hidden">
 
-                <h2 className='text-4xl font-bold mb-5 card-title md:text-5xl playfair_display'>Our Edge</h2>
+                <h2 data-aos="fade-right" className='text-4xl font-bold mb-5 card-title md:text-5xl playfair_display'>Our Edge</h2>
 
                 <div className="flex flex-col item-center justify-between">
 

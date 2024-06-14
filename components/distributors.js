@@ -83,13 +83,13 @@ export default function Distributors() {
 
             <div className="card-body items-center h-auto">
 
-                <h2 className='text-5xl font-bold text-center mb-10 card-title playfair_display md:text-6xl'>Our Partners & Distributors</h2>
+                <h2 data-aos="fade-down" className='text-5xl font-bold text-center mb-10 card-title playfair_display md:text-6xl'>Our Partners & Distributors</h2>
 
 
                 <div className='md:hidden jakarta'>
                     <div className="card w-80 bg-neutral mb-5 shadow-xl transition-transform duration-300 hover:scale-105">
                         <figure><Image src={logo} alt="Shoes" /></figure>
-                        <div className="card-body">
+                        <div data-aos="fade-right" className="card-body">
                             <div className="badge badge-primary font-bold jakarta">Factory Outlet</div>
 
 
@@ -122,7 +122,7 @@ export default function Distributors() {
 
                     <div className="card w-80 bg-neutral mb-5 shadow-xl transition-transform duration-300 hover:scale-105">
                         <figure><Image src={khushiSweets} alt="Movie" className='w-80 h-68' /></figure>
-                        <div className="card-body">
+                        <div data-aos="fade-right" className="card-body">
                             <div className="badge badge-primary font-bold jakarta">Authorised Partner</div>
 
                             <h2 className="card-title">Khushi sweets</h2>
@@ -161,7 +161,7 @@ export default function Distributors() {
                 <div className='hidden md:block jakarta'>
                     <div className="card card-side bg-neutral mb-6 shadow-xl transition-transform duration-300 hover:scale-105">
                         <figure><Image src={logo} alt="Movie" className='w-80 h-68' /></figure>
-                        <div className="card-body">
+                        <div data-aos="fade-right" className="card-body">
                             <div className="badge badge-primary font-bold jakarta">Factory Outlet</div>
 
 
@@ -191,7 +191,7 @@ export default function Distributors() {
 
                     <div className="card card-side bg-neutral mb-6 shadow-xl transition-transform duration-300 hover:scale-105">
                         <figure><Image src={khushiSweets} alt="Movie" className='w-80 h-68' /></figure>
-                        <div className="card-body">
+                        <div data-aos="fade-right" className="card-body">
                             <div className="badge badge-primary font-bold jakarta">Authorised Partner</div>
 
                             <h2 className="card-title">Khushi sweets</h2>
@@ -230,7 +230,7 @@ export default function Distributors() {
                             < div className="card bg-neutral shadow-xl image-full w-full md:w-80 lg:w-80 xl:w-96 overflow-hidden transition-transform duration-300 hover:scale-105" >
 
                                 {/* <figure><Image src={product.image} alt={product.title} className='w-full' /></figure> */}
-                                <div className="card-body">
+                                <div data-aos="fade-right" className="card-body">
                                     <div className="badge badge-secondary font-bold jakarta">Distributor</div>
 
                                     <h2 className="card-title jakarta font-bold">{product.title}</h2>

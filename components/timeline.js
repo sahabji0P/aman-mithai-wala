@@ -119,10 +119,10 @@ export default function TimeLine() {
 
             <div className="my-1 py-2 flex flex-col w-full border-y-2 border-black dark:border-neutral-800 rounded-xl bg-neutral text-white lg:flex-row overflow-hidden">
                 <div className="w-full flex flex-col items-center justify-center pt-3 space-x-4">
-                    <div className="p-8 md:p-24 pt-4 w-full text-center">
+                    <div data-aos="fade-right" className="p-8 md:p-24 pt-4 w-full text-center">
                         <h2 className="text-4xl font-bold text-center playfair_display md:text-6xl mb-3">About Us</h2>
 
-                        <p className="pt-3 jakarta text-left text-xl">
+                        <p data-aos="fade-up" className="pt-3 jakarta text-left text-xl">
                             Aman Mithaiwala Pvt. Ltd. is a Delhi-based business dedicated to preserving the rich heritage of traditional Indian sweets. Established in 1999, we craft authentic and delectable sweets using time-honored recipes and techniques.
                             Our commitment to quality is unwavering, as we source only the finest ingredients, including pure desi ghee, premium nuts, and aromatic spices. Our product range includes iconic delicacies like Bikaneri Barfi, indulgent Kaju Katli, and the beloved Ladoos.
                             For celebrations, our Shaadi/Wedding Bhaji and Ladoos are cherished traditions, adding sweetness to joyous occasions. We also export our Ladoo Dana to Australia & Canada, allowing people to savor the authentic flavors of India.

@@ -4,6 +4,8 @@ import Difference from "@/components/difference";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import doodle from "@/public/doodle.jpeg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import Products from "@/components/products";
 import Contact from "@/components/contact";
@@ -23,6 +25,13 @@ export default function Home() {
 
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    })
+  }, [])
 
   return (
     <main className="p-2 ">
@@ -65,7 +74,7 @@ export default function Home() {
 
           /></figure>
 
-          <div className="card-body items-center md:flex-row justify-center">
+          <div data-aos="fade-right" className="card-body items-center md:flex-row justify-center">
             <h2 className="text-6xl playfair_display font-bold">INDIA's </h2>
             <h1 className="text-8xl jakarta font-bold text-red-500 transition-transform duration-300 hover:scale-150"> 1st</h1>
             <h2 className="text-5xl playfair_display font-bold text-center md:text-left md:mr-2">Wholesale Brand in Indian Sweets</h2>
