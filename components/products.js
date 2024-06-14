@@ -144,12 +144,12 @@ export default function Products() {
 
             <div className="card-body items-center h-auto">
 
-                <h2 className='text-4xl font-bold text-center mb-10 card-title playfair_display md:text-6xl'>Our Delicacy</h2>
+                <h2 data-aos="fade-down" className='text-4xl font-bold text-center mb-10 card-title playfair_display md:text-6xl'>Our Delicacy</h2>
 
                 <div className='md:hidden'>
                     <div className="card w-80 bg-neutral mb-5 jakarta shadow-xl transition-transform duration-300 hover:scale-105">
                         <figure><Image src={group} alt="Shoes" /></figure>
-                        <div className="card-body">
+                        <div data-aos="fade-right" className="card-body">
                             <div className="badge badge-ghost font-bold jakarta">Various Options</div>
                             <h2 className="card-title jakarta">Wedding Bhaji</h2>
                             <p className='jakarta'> A traditional Indian gift for weddings and other special occasions </p>
@@ -163,7 +163,7 @@ export default function Products() {
                 <div className='hidden md:block'>
                     <div className="card card-side bg-neutral mb-6 shadow-xl jakarta transition-transform duration-300 hover:scale-105">
                         <figure><Image src={group} alt="Movie" className='w-80 h-68' /></figure>
-                        <div className="card-body">
+                        <div data-aos="fade-right" className="card-body">
                             <div className="badge badge-ghost font-bold jakarta">Various Options</div>
                             <h2 className="card-title">Wedding Bhaji</h2>
                             <p className=''>  A traditional Indian gift for weddings and other special occasions </p>
@@ -217,7 +217,7 @@ export default function Products() {
                         <div key={product.id}>
                             < div className="card bg-base-100 shadow-xl image-full w-full md:w-80 lg:w-80 xl:w-96 overflow-hidden transition-transform duration-300 hover:scale-105" >
                                 <figure><Image src={product.image} alt={product.title} className='w-full' /></figure>
-                                <div className="card-body">
+                                <div data-aos="fade-right" className="card-body">
                                     <h2 className="card-title jakarta font-bold">{product.title}</h2>
                                     <p className='jakarta'>{product.description}</p>
                                     <div className="card-actions justify-end">

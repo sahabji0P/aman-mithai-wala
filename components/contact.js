@@ -75,12 +75,12 @@ export default function ContactMe() {
 
             <div className='bg-base-300 items-center md:mt-10 md:pt-10 mt-10'>
 
-                <h2 className="pt-8 text-5xl sm:pt-0 playfair_display text-center font-bold">Apply for Distributorship</h2>
+                <h2 data-aos="fade-right" className="pt-8 text-5xl sm:pt-0 playfair_display text-center font-bold">Apply for Distributorship</h2>
             </div>
 
 
             <div className="flex flex-col items-center justify-center border-t-2 border-cyan-400 bg-base-300 py-5 text-gray-700 dark:border-0 dark:text-black sm:flex-row">
-                <div className="min-w-1/2 flex flex-col justify-center sm:mr-10">
+                <div data-aos="fade-up" className="min-w-1/2 flex flex-col justify-center sm:mr-10">
 
                     {/* <h1 className='text-2xl jakarta font-bold mb-5'>Aman Mithaiwala Pvt. Ltd.</h1> */}
 
