@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  width: 100%;
+  width: auto;
   height: auto;
   margin: auto;
   background-size: cover;
@@ -26,7 +26,7 @@
 }
 .tel {
   top: 57%;
-  left: 30%;
+  left: 35%;
 }
 .utt {
   top: 21%;
@@ -39,13 +39,13 @@
 }
 
 .one {
-  left: 37%;
-  top: 62%;
+  left: 41%;
+  top: 61%;
 }
 
 .two {
-  left: 32%;
-  top: 27%;
+  left: 37.8%;
+  top: 27.6%;
   z-index: 1;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .mapArrow {
-  font-size: 20px;
+  font-size: 10px;
   z-index: -5;
   color: rgb(86, 9, 9);
 }
@@ -102,18 +102,22 @@
   }
 
   .one {
-    left: 36%;
-    top: 61%;
+    left: 39%;
+    top: 60%;
   }
 
   .two {
-    left: 31%;
-    top: 26%;
+    left: 36.7%;
+    top: 26.5%;
   }
 
   .three {
     left: 30%;
     top: 30%;
+  }
+  .tel {
+    top: 55%;
+    left: 34%;
   }
 
   .popup {
@@ -123,7 +127,7 @@
   }
 
   .mapArrow {
-    font-size: 10px;
+    font-size: 6px;
   }
 
   /* Adjusted positions for responsive view */
@@ -148,17 +152,17 @@
   }
 
   .one {
-    left: 35%;
-    top: 60%;
+    left: 39%;
+    top: 59%;
   }
 
   .two {
-    left: 30%;
-    top: 25%;
+    left: 35.7%;
+    top: 25.5%;
   }
   .tel {
     top: 54%;
-    left: 30%;
+    left: 34%;
   }
   .three {
     top: 35%;
@@ -175,7 +179,7 @@
   }
 
   .mapArrow {
-    font-size: 6px;
+    font-size: 5px;
     z-index: -5;
     color: rgb(55, 11, 11);
   }

@@ -65,8 +65,10 @@ export default function Home() {
 
           /></figure>
 
-          <div className="card-body items-center justify-center">
-            <h2 className="text-6xl playfair_display font-bold">INDIA's 1'st Wholesale Brand in Indian Sweets</h2>
+          <div className="card-body items-center md:flex-row justify-center">
+            <h2 className="text-6xl playfair_display font-bold">INDIA's </h2>
+            <h1 className="text-8xl jakarta font-bold text-red-500 transition-transform duration-300 hover:scale-150"> 1st</h1>
+            <h2 className="text-5xl playfair_display font-bold text-center md:text-left md:mr-2">Wholesale Brand in Indian Sweets</h2>
 
           </div>
         </div>
@@ -96,6 +98,6 @@ export default function Home() {
 
 
 
-    </main>
+    </main >
   );
 }
