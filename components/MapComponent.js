@@ -50,12 +50,21 @@ const MapComponent = () => {
                         <p className='mb-2'>Factory Outlet</p>
                         <div style={{ maxWidth: '100%', overflow: 'hidden', width: '100%', height: '100%' }}>
                             <div id="delhi-google-maps-canvas" style={{ height: '100%', width: '100%', maxWidth: '100%' }}>
-                                <iframe
+                                {/* <iframe
                                     style={{ height: '100%', width: '100%', border: 0 }}
                                     frameBorder="0"
-                                    src="https://www.google.com/maps/embed/v1/place?q=shree+aman+sweets&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                    src="https://www.google.com/maps/embed/v1/place?q=AMAN+MITHAIWALA+narela&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
                                 ></iframe>
+
+                                */}
+
+                                <iframe
+                                    style={{ height: '100%', width: '100%', border: 0 }}
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.153898552776!2d77.32832599999999!3d28.685042599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbac08c80ea1%3A0x8fccc5f28700d00d!2sAman%20Mithaiwala%20pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1718382036157!5m2!1sen!2sin"
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
+
+
                         </div>
                     </div >
                 </div >
