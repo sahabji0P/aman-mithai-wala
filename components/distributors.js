@@ -86,7 +86,7 @@ export default function Distributors() {
                 <h2 className='text-5xl font-bold text-center mb-10 card-title playfair_display md:text-6xl'>Our Partners & Distributors</h2>
 
 
-                <div className='md:hidden'>
+                <div className='md:hidden jakarta'>
                     <div className="card w-80 bg-neutral mb-5 shadow-xl transition-transform duration-300 hover:scale-105">
                         <figure><Image src={logo} alt="Shoes" /></figure>
                         <div className="card-body">
@@ -158,7 +158,7 @@ export default function Distributors() {
 
                 </div>
 
-                <div className='hidden md:block'>
+                <div className='hidden md:block jakarta'>
                     <div className="card card-side bg-neutral mb-6 shadow-xl transition-transform duration-300 hover:scale-105">
                         <figure><Image src={logo} alt="Movie" className='w-80 h-68' /></figure>
                         <div className="card-body">

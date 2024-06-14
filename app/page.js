@@ -66,7 +66,7 @@ export default function Home() {
           /></figure>
 
           <div className="card-body items-center justify-center">
-            <h2 className="text-6xl playfair_display font-bold">INDIA's first Wholesale Brand in Indian Sweets</h2>
+            <h2 className="text-6xl playfair_display font-bold">INDIA's 1'st Wholesale Brand in Indian Sweets</h2>
 
           </div>
         </div>
