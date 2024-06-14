@@ -5,9 +5,10 @@ import { useEffect } from 'react'
 
 import Image from 'next/image'
 import weddingBhaji from '@/public/weddingBhaji.jpg'
-import c1 from '@/public/catalog.jpg'
-import c2 from '@/public/catalog1.jpg'
-import c3 from '@/public/catalog3.jpg'
+import c1 from '@/public/catalog/1.png'
+import c2 from '@/public/catalog/2.png'
+// import c2 from '@/public/catalog1.jpg'
+// import c3 from '@/public/catalog3.jpg'
 
 import rLadoos from '@/public/Products/ladoo.jpg'
 import bikaneriBurfi from '@/public/Products/bikaneriBurfi.webp'
@@ -94,7 +95,7 @@ export default function Products() {
     };
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const catalogImages = [c1, c2, c3]; // Array of catalog images
+    const catalogImages = [c1, c2]; // Array of catalog images
     const bhajiImages = [b1, b2, b3, b4, b5, b6, b7, b8, b9]; // Array of bhaji images
 
     // ... (rest of the code remains the same) ...
