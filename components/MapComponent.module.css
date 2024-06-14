@@ -84,13 +84,13 @@
 
 /* Adjusted positions and styles for two popups */
 .popup.onetab {
-  left: calc(100% - 470px); /* Ensure they appear side by side */
+  left: calc(100% - 200px); /* Ensure they appear side by side */
   top: calc(100% - 200px);
   z-index: 1010;
 }
 
 .popup.twotab {
-  left: calc(100% - 470px); /* Adjust as needed for spacing */
+  left: calc(100% - 200px); /* Adjust as needed for spacing */
   top: calc(100% + 70px);
   z-index: 1010;
 }
