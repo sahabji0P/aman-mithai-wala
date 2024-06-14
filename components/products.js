@@ -10,7 +10,7 @@ import c2 from '@/public/catalog1.jpg'
 import c3 from '@/public/catalog3.jpg'
 
 import rLadoos from '@/public/Products/ladoo.jpg'
-import bikaneriBurfi from '@/public/Products/bikaneriBurfi.jpg'
+import bikaneriBurfi from '@/public/Products/bikaneriBurfi.webp'
 import kajuKatli from '@/public/Products/kk.jpg'
 import doda from '@/public/Products/doda.jpg'
 
@@ -252,7 +252,6 @@ export default function Products() {
                             </div>
                         </div>
                     )}
-
 
                 </div>
 

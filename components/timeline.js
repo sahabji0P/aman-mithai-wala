@@ -109,7 +109,7 @@
 // }
 
 
-import styles from "@/components/Alerts/hyderabad.module.css";
+import styles from "@/components/Alerts/timeline.module.css";
 export default function TimeLine() {
     return (
         <>
@@ -117,7 +117,7 @@ export default function TimeLine() {
             </section>
 
 
-            <div className="my-1 py-2 flex flex-col w-full border-y-2 border-black dark:border-neutral-800 rounded-xl bg-neutral text-white lg:flex-row">
+            <div className="my-1 py-2 flex flex-col w-full border-y-2 border-black dark:border-neutral-800 rounded-xl bg-neutral text-white lg:flex-row overflow-hidden">
                 <div className="w-full flex flex-col items-center justify-center pt-3 space-x-4">
                     <div className="p-8 md:p-24 pt-4 w-full text-center">
                         <h2 className="text-4xl font-bold text-center playfair_display md:text-6xl mb-3">About Us</h2>

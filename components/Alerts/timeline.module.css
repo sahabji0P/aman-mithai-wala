@@ -1,0 +1,63 @@
+.marqueeContainer {
+    width: 110%;
+    right: 50px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: linear-gradient(
+      90deg,
+      #f8f9fa,
+      #e9ecef
+    ); /* Gradient background */
+    padding: 10px 0;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .marqueeContent {
+    display: inline-block;
+    padding-left: 100%; /* Push the text off-screen to the right */
+    font-size: 1.5rem; /* Base font size */
+    font-weight: bold;
+    color: #343a40; /* Dark color for contrast */
+    animation: marquee 10s linear infinite; /* Marquee animation */
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .marqueeContent::before {
+    content: "🚀 "; /* Decorative emoji */
+    position: absolute;
+    left: -2rem; /* Position emoji slightly off-screen */
+    animation: emoji-scroll 10s linear infinite; /* Match marquee animation */
+  }
+  
+  @keyframes emoji-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .marqueeContent {
+      font-size: 1.25rem; /* Adjust font size for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .marqueeContent {
+      font-size: 1rem; /* Adjust font size for mobile devices */
+    }
+  }
+  
