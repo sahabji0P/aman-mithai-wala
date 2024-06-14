@@ -130,11 +130,11 @@ export default function TimeLine() {
                         </p>
                     </div>
                     <div className="bg-white text-black p-3 shadow-md border border-gray-300 rounded-md inline-block mb-6">
-                        <p className="text-lg font-semibold">Established in 1999</p>
+                        <p className="text-lg jakarta font-semibold">Established in 1999</p>
                     </div>
                     <div className={`${styles.marqueeContainer}`}>
                         <div className={styles.marqueeContent}>
-                            <h1> 🎉 We also exports Ladoo Dana to Australia and Canada 🎉 </h1>
+                            <h1 className="jakarta font-bold"> 🎉 We also export Ladoo Dana to Australia and Canada 🎉 </h1>
                         </div>
                     </div>
 

@@ -25,8 +25,8 @@
   top: 100%;
 }
 .tel {
-  top: 78%;
-  left: 39%;
+  top: 57%;
+  left: 30%;
 }
 .utt {
   top: 21%;
@@ -39,13 +39,13 @@
 }
 
 .one {
-  left: 40%;
-  top: 58%;
+  left: 37%;
+  top: 62%;
 }
 
 .two {
-  left: 38%;
-  top: 29%;
+  left: 32%;
+  top: 27%;
   z-index: 1;
 }
 
@@ -102,13 +102,13 @@
   }
 
   .one {
-    left: 35%;
-    top: 56%;
+    left: 36%;
+    top: 61%;
   }
 
   .two {
-    left: 40%;
-    top: 34%;
+    left: 31%;
+    top: 26%;
   }
 
   .three {
@@ -120,6 +120,10 @@
     z-index: 10;
     width: 60vw;
     height: 60vh;
+  }
+
+  .mapArrow {
+    font-size: 10px;
   }
 
   /* Adjusted positions for responsive view */
@@ -139,19 +143,22 @@
     width: 10%;
     height: 10%;
   }
+  .mapArrow {
+    font-size: 12px;
+  }
 
   .one {
     left: 35%;
-    top: 56%;
+    top: 60%;
   }
 
   .two {
-    left: 34%;
-    top: 29%;
+    left: 30%;
+    top: 25%;
   }
   .tel {
-    top: 80%;
-    left: 37%;
+    top: 54%;
+    left: 30%;
   }
   .three {
     top: 35%;

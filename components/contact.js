@@ -69,24 +69,37 @@ export default function ContactMe() {
     return (
 
         <>
-            {/* <Element name="contact-us" className="relative"></Element> */}
-
-
             <section id='contact'>
             </section>
+
+
+            <div className='bg-base-300 items-center md:mt-10 md:pt-10 mt-10'>
+
+                <h2 className="pt-8 text-5xl sm:pt-0 playfair_display text-center font-bold">Apply for Distributorship</h2>
+            </div>
+
+
             <div className="flex flex-col items-center justify-center border-t-2 border-cyan-400 bg-base-300 py-5 text-gray-700 dark:border-0 dark:text-black sm:flex-row">
                 <div className="min-w-1/2 flex flex-col justify-center sm:mr-10">
-                    <h2 className="pb-8 pt-8 text-5xl sm:pt-0 playfair_display font-bold">Get in touch</h2>
+
+                    {/* <h1 className='text-2xl jakarta font-bold mb-5'>Aman Mithaiwala Pvt. Ltd.</h1> */}
+
+                    <span className="flex items-center mb-2">
+                        <Link
+                            className="group transition duration-300 jakarta text-2xl font-bold"
+                            href="#"
+                            rel="noreferrer"
+                        >
+                            Aman Mithaiwala Pvt. Ltd.
+                            <span className="block h-0.5 max-w-0 bg-black transition-all duration-500 group-hover:max-w-full dark:bg-neutral"></span>
+                        </Link>
+                    </span>
 
                     <span className="flex flex-col items-left pb-4">
-
                         <p className='font-bold jakarta hover:underline-offset-1'>Head Office:</p>
                         <p className=' jakarta'>E-809, DSIIDC, Narela Industrial Area,</p>
                         <p className=' jakarta'>New Delhi - 110040</p>
                         <p className='jakarta font-semibold'> Phone No: +91-8800614952</p>
-
-
-
                     </span>
 
                     <span className="flex flex-col items-left pb-4">
@@ -96,18 +109,14 @@ export default function ContactMe() {
                         <p className=' jakarta'> Delhi - 110095</p>
                         <p className=' jakarta font-semibold'> Phone No: +91-9319674090</p>
 
-
                     </span>
 
                     <span className="flex flex-col items-left pb-4">
 
                         <p className='font-bold jakarta hover:underline-offset-1'>Hyderabad Branch:</p>
-                        <p className=' jakarta'>Plot No.43, IDA Opp. Bharat Electornics Ltd  </p>
+                        <p className=' jakarta'>Plot No.43, IDA, Opp. Bharat Electornics Ltd  </p>
                         <p className=' jakarta'>Mallapur, Hyderabad, Telangana - 500076</p>
                         <p className=' jakarta font-semibold'> Phone No: +91-8977754490</p>
-
-
-
                     </span>
 
 
@@ -177,6 +186,7 @@ export default function ContactMe() {
                     <p className='text-xs text-balance text-center font-semibold'>Powered By WebLanders</p>
                 </Link>
             </footer>
+
         </>
     );
     // Rest of the code remains the same...

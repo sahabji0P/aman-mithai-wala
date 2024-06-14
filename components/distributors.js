@@ -81,7 +81,7 @@ export default function Distributors() {
             </section>
             <figure><Image src={doodle2} alt="Shoes" className='w-full' /></figure>
 
-            <div className="card-body items-center justify-center h-auto">
+            <div className="card-body items-center h-auto">
 
                 <h2 className='text-5xl font-bold text-center mb-10 card-title playfair_display md:text-6xl'>Our Partners & Distributors</h2>
 

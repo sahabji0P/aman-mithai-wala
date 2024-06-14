@@ -10,7 +10,7 @@ import Navbar from "@/components/navbar";
 
 // const inter = Inter({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"], weight: '500', variable: '--font-playfair_display' });
-const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: '--font-jakarta' });
+const jakarta = Montserrat({ subsets: ["latin"], variable: '--font-montserrat' });
 
 export const metadata = {
   title: "Aman Mithaiwala Pvt. Ltd.",
