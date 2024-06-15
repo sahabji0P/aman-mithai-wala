@@ -1,8 +1,4 @@
 
-
-
-
-
 import doodle2 from '../public/doodle3.png'
 import { useState } from 'react'
 import { useEffect } from 'react'
@@ -10,8 +6,6 @@ import { useEffect } from 'react'
 import Link from 'next/link'
 
 import Image from 'next/image'
-
-import weddingBhaji from '@/public/weddingBhaji.jpg'
 
 import khushiSweets from '@/public/ks.png'
 
@@ -30,25 +24,21 @@ export default function Distributors() {
             id: 1,
             title: 'Jindutt Sweets',
             description: 'East Delhi',
-            image: weddingBhaji,
         },
         {
             id: 2,
             title: 'Bansal Mithaiwala',
             description: 'North Delhi',
-            image: weddingBhaji,
         },
         {
             id: 3,
             title: 'Ayu Sweets',
             description: 'South Delhi',
-            image: weddingBhaji,
         },
         {
             id: 4,
             title: 'MG Petha Bhandar',
             description: 'Amritsar, Punjab',
-            image: weddingBhaji,
         },
         // Add more products as needed
     ];
