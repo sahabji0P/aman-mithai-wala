@@ -3,6 +3,9 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
 import { Montserrat } from "next/font/google";
 
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 
 import "./globals.css";
@@ -23,24 +26,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${playfair.variable} ${jakarta.variable}`}>
 
-
-        {/* <nav className="navbar bg-base-100 z-50 shadow-xl fixed w-full">
-
-          <div className="flex item-center justify-between h-full w-full px-4 2xl:px-16">
-            <div>
-              Right
-            </div>
-
-            <div>
-              Left
-            </div>
-          </div>
-
-        </nav> */}
-
         <Navbar />
 
         {children}
+        <Analytics />
+        <SpeedInsights />
+
 
       </body>
     </html >
