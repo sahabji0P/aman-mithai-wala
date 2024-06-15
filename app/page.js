@@ -12,7 +12,6 @@ import Contact from "@/components/contact";
 import MapComponent from "@/components/MapComponent";
 import Distributors from "@/components/distributors";
 import MarqueeComponent from "@/components/Alerts/hyderabad";
-import Duplicate from "@/components/dupProduct";
 
 
 export default function Home() {
