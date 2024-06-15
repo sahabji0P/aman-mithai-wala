@@ -11,7 +11,8 @@ import c2 from '@/public/catalog/2.png'
 // import c3 from '@/public/catalog3.jpg'
 
 import rLadoos from '@/public/Products/ladoo.jpg'
-import bikaneriBurfi from '@/public/Products/bikaneriBurfi.webp'
+// import bikaneriBurfi from '@/public/Products/bikaneriBurfi.webp'
+import bikaneriBurfi from '@/public/Products/bikaneriBarfi.png'
 import kajuKatli from '@/public/Products/kk.jpg'
 import doda from '@/public/Products/doda.jpg'
 
